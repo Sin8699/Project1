@@ -7,9 +7,15 @@ var resultButton = (input) => {
 }
 
 
-var addStore = () => {
-    document.getElementById("Store").textContent = parseInt(document.getElementById("Store").textContent) + 1;
+var addStore = (type = 1) => {
+    if (type == 1)
+        document.getElementById("Store").textContent = parseInt(document.getElementById("Store").textContent) + 1;
+    else
+        document.getElementById("Store").textContent = parseInt(document.getElementById("Store").textContent) + parseInt(document.getElementById("inputCouter").value);
 }
+
+
+
 
 var swapImg = (index) => {
     item1 = document.getElementById("img" + index).src;
