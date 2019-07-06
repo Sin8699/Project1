@@ -14,10 +14,11 @@ body {
 }
 
 .header {
-    margin-top: 70px;
+    margin: 70px 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .menu {
@@ -67,21 +68,23 @@ body {
 }
 
 .shop {
-    position: relative;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .shop .s1 {
-    position: absolute;
     background: #E60606;
     border-radius: 50%;
     min-width: 22px;
-    min-height: 20px;
+    height: 22px;
     text-align: center;
     color: #fff;
-    top: -10px;
-    left: 35px;
-    padding: 2px;
+    margin: -15px auto;
+}
+
+.shop img {
+    max-width: 32px;
+    max-height: 27px;
 }
 
 
@@ -96,7 +99,7 @@ main {
     font-size: 16px;
     line-height: 32px;
     color: #0E1716;
-    margin-left: 160px;
+    margin: 0 150px;
 }
 
 .T_Product span {
@@ -251,7 +254,6 @@ hr {
 
 .custom {
     margin: 70px 140px 50px 140px;
-    ;
     height: 24px;
     font-family: SFU Futura;
     font-size: 24px;
@@ -264,6 +266,8 @@ hr {
     flex-wrap: wrap;
     max-width: 1300px;
     margin: auto;
+    transition-duration: 4s;
+    transition-timing-function: linear;
 }
 
 .custom_content {
@@ -288,6 +292,8 @@ hr {
     display: flex;
     flex: 1;
     max-width: 400px;
+    transition-duration: 4s;
+    transition-timing-function: linear;
 }
 
 .X_img {
@@ -357,7 +363,7 @@ X table th button {
     font-size: 24px;
     line-height: 24px;
     color: #15619F;
-    margin-left: 140px;
+    margin: 0 140px;
 }
 
 .productSeen_content {
@@ -380,7 +386,7 @@ X table th button {
     flex: 1;
     height: 296px;
     padding: 50px 32px;
-    max-width: 300px;
+    max-width: 240px;
 }
 
 .Item_detail {
@@ -633,5 +639,11 @@ b {
     .Item_content {
         flex-wrap: wrap;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 564px) {
+    .T_Product {
+        margin: 0 50px;
     }
 }

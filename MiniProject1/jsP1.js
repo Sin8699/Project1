@@ -1,9 +1,47 @@
+var arrProductWith = [{
+    source: "./C1.png",
+    name: "Móc khóa cái ôm",
+    size: null,
+    price: "95,000 đ"
+}, {
+    source: "./C2.png",
+    name: "Sổ tay bìa gỗ",
+    size: "Kích thước M",
+    price: "345,000 đ"
+}, {
+    source: "./C3.png",
+    name: "Móc khóa",
+    size: "Kích thước M",
+    price: "125,000 đ"
+}]
+
+var arrProducSeen = [{
+    source: "./S1.png",
+    name: "Sổ tay bìa gỗ",
+    size: "Kích thước M",
+    price: "345,000 đ"
+}, {
+    source: "./S2.png",
+    name: "Sổ tay bìa gỗ",
+    size: "Kích thước M",
+    price: "345,000 đ"
+}, {
+    source: "./S3.png",
+    name: "Sổ tay bìa gỗ",
+    size: "Kích thước M",
+    price: "345,000 đ"
+}, {
+    source: "./S4.png",
+    name: "Sổ tay bìa gỗ",
+    size: "Kích thước M",
+    price: "345,000 đ"
+}]
+
 var resultButton = (input) => {
     if (input == true)
         document.getElementById("inputCouter").value = parseInt(document.getElementById("inputCouter").value) + 1;
     else
         document.getElementById("inputCouter").value = parseInt(document.getElementById("inputCouter").value) - 1;
-    dkf;
 }
 
 
@@ -22,4 +60,56 @@ var swapImg = (index) => {
     item2 = document.getElementById("imgMain").src;
     document.getElementById("imgMain").src = item1;
     document.getElementById("img" + index).src = item2;
+}
+
+//var exchangeProduct = (type, button) => {
+//type :1
+// if (type == 1) {
+//     if (button == true) {
+//         item = arrProductWith.shift();
+//         arrProductWith.push(item);
+//     } else {
+//         item = arrProductWith.pop();
+//         arrProductWith.unshift(item);
+//     }
+//     loadProduct(type, arrProductWith);
+// } else { //type :2
+//     if (button == true) {
+//         item = arrProducSeen.shift();
+//         arrProducSeen.push(item);
+//     } else {
+//         item = arrProducSeen.pop();
+//         arrProducSeen.unshift(item);
+//     }
+//     loadProduct(type, arrProducSeen);
+// }
+
+//}
+var exchangeProduct = (id, button) => {
+    item = document.getElementById(id);
+    if (button == true) {
+        let removed = item.removeChild(item.firstElementChild);
+        item.appendChild(removed);
+    } else {
+        let removed = item.removeChild(item.lastElementChild);
+        item.insertBefore(removed, item.firstElementChild);
+    }
+}
+
+function loadProduct(type, arr) {
+    let i = 0;
+    arr.forEach(element => {
+        for (let key in element) {
+            if (key == "source")
+                document.getElementById((type + key + i).toString()).src = element[key];
+            else
+                document.getElementById((type + key + i).toString()).textContent = element[key];
+        }
+        i++;
+    });
+}
+
+var loadData = () => {
+    loadProduct(1, arrProductWith);
+    loadProduct(2, arrProducSeen);
 }

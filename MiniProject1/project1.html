@@ -10,7 +10,7 @@
     <script src="jsP1.js"></script>
 </head>
 
-<body>
+<body onload="loadData()">
     <div class="header">
         <div class="backgroup">
             <img src="./header.png" alt="">
@@ -87,40 +87,39 @@
         </div>
         <div class="custom">Khách thường mua kèm với</div>
         <div class="custom_detail">
-            <button class="button_LR">
+            <button class="button_LR" onclick="exchangeProduct('Item_With',false)">
                     <img src="./VectorL.png">
             </button>
-            <div class="custom_content">
+            <div class="custom_content" id="Item_With">
                 <div class="X">
-                    <img class="X_img" src="./C1.png">
+                    <img class="X_img" id="1source0">
                     <div class="X_content">
-                        <div class="X_detail" style="width: 100px">
-                            Móc khóa cái ôm
+                        <div class="X_detail" id="1name0" style="width: 100px">
                         </div>
-                        <div class="X_price">95,000 đ</div>
+                        <div class="X_size" id="1size0"></div>
+                        <div class="X_price" id="1price0"></div>
                     </div>
 
                 </div>
                 <div class="X">
-                    <img class="X_img" src="./C2.png">
+                    <img class="X_img" id="1source1">
                     <div class="X_content">
-                        <div class="X_detail">
-                            Sổ tay bìa gỗ
+                        <div class="X_detail" id="1name1">
                         </div>
-                        <div class="X_size">Kích thước M</div>
-                        <div class="X_price">345,000 đ</div>
+                        <div class="X_size" id="1size1"></div>
+                        <div class="X_price" id="1price1"></div>
                     </div>
                 </div>
                 <div class="X">
-                    <img class="X_img" src="./C3.png">
+                    <img class="X_img" id="1source2">
                     <div class="X_content">
-                        <div class="X_detail">Móc khóa</div>
-                        <div class="X_size">Kích thước M</div>
-                        <div class="X_price">125,000 đ</div>
+                        <div class="X_detail" id="1name2"></div>
+                        <div class="X_size" id="1size2"></div>
+                        <div class="X_price" id="1price2"></div>
                     </div>
                 </div>
             </div>
-            <button class="button_LR">
+            <button class="button_LR" onclick="exchangeProduct('Item_With',true)">
                 <img src="./VectorR.png">
             </button>
         </div>
@@ -138,69 +137,69 @@
         <div class="productSeen">
             <div class="titleSeen">Sản phẩm đã xem</div>
             <div class="productSeen_content">
-                <button class="button_LR">
+                <button class="button_LR" onclick="exchangeProduct('Item_Seen',false)">
                         <img src="./VectorL.png">
                     </button>
-                <div class="Item_content">
+                <div class="Item_content" id="Item_Seen">
                     <div class="Item1">
                         <div class="Item_detail">
-                            <img src="./S1.png">
+                            <img id="2source0">
                             <button class="add" onclick="addStore()">THÊM VÀO GIỎ HÀNG</button>
 
                             <div class="Item_contain">
-                                <b class="Item_name">Sổ tay bìa gỗ</b>
+                                <b class="Item_name" id="2name0"></b>
                                 <div class="Item_bottom">
-                                    <div class="Item_size">Kích thước M</div>
+                                    <div class="Item_size" id="2size0"></div>
                                     <div class="empty"></div>
-                                    <div class="Item_price">345,000 đ</div>
+                                    <div class="Item_price" id="2price0"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="Item2">
                         <div class="Item_detail">
-                            <img src="./S2.png">
+                            <img id="2source1">
                             <button class="add" onclick="addStore()">THÊM VÀO GIỎ HÀNG</button>
                             <div class="Item_contain">
-                                <b class="Item_name">Sổ tay bìa gỗ</b>
+                                <b class="Item_name" id="2name1"></b>
                                 <div class="Item_bottom">
-                                    <div class="Item_size">Kích thước M</div>
+                                    <div class="Item_size" id="2size1"></div>
                                     <div class="empty"></div>
-                                    <div class="Item_price">345,000 đ</div>
+                                    <div class="Item_price" id="2price1"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="Item3">
                         <div class="Item_detail">
-                            <img src="./S3.png">
+                            <img id="2source2">
                             <button class="add" onclick="addStore()">THÊM VÀO GIỎ HÀNG</button>
                             <div class="Item_contain">
-                                <b class="Item_name">Sổ tay bìa gỗ</b>
+                                <b class="Item_name" id="2name2"></b>
                                 <div class="Item_bottom">
-                                    <div class="Item_size">Kích thước M</div>
+                                    <div class="Item_size" id="2size2"></div>
                                     <div class="empty"></div>
-                                    <div class="Item_price">345,000 đ</div>
+                                    <div class="Item_price" id="2price2"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="Item4">
                         <div class="Item_detail">
-                            <img src="./S4.png">
+                            <img id="2source3">
                             <button class="add" onclick="addStore()">THÊM VÀO GIỎ HÀNG</button>
                             <div class="Item_contain">
-                                <b class="Item_name">Sổ tay bìa gỗ</b>
+                                <b class="Item_name" id="2name3"></b>
                                 <div class="Item_bottom">
-                                    <div class="Item_size">Kích thước M</div>
+                                    <div class="Item_size" id="2size3"></div>
                                     <div class="empty"></div>
-                                    <div class="Item_price">345,000 đ</div>
+                                    <div class="Item_price" id="2price3"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="button_LR">
+                <button class="button_LR" onclick="exchangeProduct('Item_Seen',true)">
                 <img src="./VectorR.png">
             </button>
             </div>
