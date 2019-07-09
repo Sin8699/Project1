@@ -113,3 +113,83 @@ var loadData = () => {
     loadProduct(1, arrProductWith);
     loadProduct(2, arrProducSeen);
 }
+
+
+const slideWith = document.querySelector('#slide');
+//Buttons
+const preWith = document.querySelector('#pre');
+const nexWith = document.querySelector('#next');
+
+//Counter
+let counter = 0;
+const size = 410;
+let len = 3;
+
+
+preWith.addEventListener('click', () => {
+    slide.style.transition = "transform 0.4s ease-in-out";
+    counter--;
+    slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+
+});
+nexWith.addEventListener('click', () => {
+    slide.style.transition = "transform 0.4s ease-in-out";
+    counter++;
+    slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+})
+
+slideWith.addEventListener('transitionend', () => {
+    console.log(counter);
+    if (counter < 0) {
+        slide.style.transition = "none";
+        counter = len - 1;
+        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+    if (counter == len) {
+        slide.style.transition = "none";
+        counter = 0;
+        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+})
+
+//SEEN
+
+const slideS = document.querySelector('#slideSeen');
+//Buttons
+const prevS = document.querySelector('#prevSeen');
+const nextS = document.querySelector('#nextSeen');
+
+//Counter
+let counterS = 0;
+const sizeS = 300;
+let lenS = 4;
+
+
+prevS.addEventListener('click', () => {
+    slideS.style.transition = "transform 0.4s ease-in-out";
+    counterS--;
+    slideS.style.transform = 'translateX(' + (-sizeS * counterS) + 'px)';
+
+
+});
+nextS.addEventListener('click', () => {
+    slideS.style.transition = "transform 0.4s ease-in-out";
+    counterS++;
+    slideS.style.transform = 'translateX(' + (-sizeS * counterS) + 'px)';
+
+})
+
+slideS.addEventListener('transitionend', () => {
+    if (counterS < 0) {
+        slideS.style.transition = "none";
+        counterS = lenS - 1;
+        slideS.style.transform = 'translateX(' + (-sizeS * counterS) + 'px)';
+    }
+    if (counterS == lenS) {
+        slideS.style.transition = "none";
+        counterS = 0;
+        slideS.style.transform = 'translateX(' + (-sizeS * counterS) + 'px)';
+    }
+})

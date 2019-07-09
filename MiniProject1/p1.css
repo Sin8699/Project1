@@ -1,649 +1,660 @@
-body {
-    max-width: 1440px;
-    margin: 0px auto;
-}
-
-@font-face {
-    font-family: SFU Futura;
-    src: url(SFUFuturaRegular.ttf);
-}
-
-@font-face {
-    font-family: SFU Bold;
-    src: url(SFUFuturaBold.ttf);
-}
-
-.header {
-    margin: 70px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-.Tmenu {
-    font-family: SFU Futura;
-    font-size: 17px;
-    color: #4F4F4F;
-    text-decoration: none;
-    padding: 0 20px;
-}
-
-.search {
-    display: flex;
-    width: 251px;
-    height: 36px;
-    background: #FFF7EF;
-    border-radius: 4px;
-}
-
-.search button {
-    border: none;
-    background-color: #FFF7EF;
-    height: 38px;
-    width: 30px;
-    border-radius: 0px 4px 4px 0px;
-}
-
-.searchIcon {
-    width: 17px;
-    height: 17px;
-    margin-top: 5px;
-}
-
-.inputSearch {
-    flex: 1;
-    background-color: #FFF7EF;
-    border-radius: 4px;
-    border: 0px solid;
-    width: 215px;
-    height: 36px;
-    text-indent: 10px;
-}
-
-.shop {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.shop .s1 {
-    background: #E60606;
-    border-radius: 50%;
-    min-width: 22px;
-    height: 22px;
-    text-align: center;
-    color: #fff;
-    margin: -15px auto;
-}
-
-.shop img {
-    max-width: 32px;
-    max-height: 27px;
-}
-
-
-/*  */
-
-main {
-    margin-top: 50px;
-}
-
-.T_Product {
-    font-family: SFU Futura;
-    font-size: 16px;
-    line-height: 32px;
-    color: #0E1716;
-    margin: 0 150px;
-}
-
-.T_Product span {
-    color: bisque;
-}
-
-.T_Product a {
-    text-decoration: none;
-    color: black;
-}
-
-.SP {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 30px 120px;
-}
-
-hr {
-    width: 100%;
-    background: #658E73;
-}
-
-.img {
-    width: 90px;
-    height: 90px;
-}
-
-.SP img {
-    padding: 20px 0;
-}
-
-.MainP {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.imgMain {
-    width: 517px;
-    height: 637.63px;
-}
-
-.detailsProduct {
-    display: flex;
-    flex-direction: column;
-}
-
-.titleProduct {
-    font-family: SFU Futura;
-    font-size: 42px;
-    line-height: 59px;
-    margin-bottom: 50px;
-    color: #4D2C27;
-}
-
-.textProduct {
-    width: 380px;
-    font-family: SFU Futura;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
-}
-
-.counterProduct {
-    display: flex;
-    width: 335px;
-    height: 36px;
-    background: #FFF7EF;
-    border-radius: 10px;
-    margin-top: 30px;
-}
-
-.counterProduct input {
-    flex: 1;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    font-size: 22px;
-    text-align: center;
-    background: #FFF7EF;
-    border: 0px solid;
-    box-direction: none;
-}
-
-.buttonSub {
-    background-color: #FFF7EF;
-    border: 0px solid;
-    font-size: 30px;
-    flex-basis: 50px;
-    border-radius: 10px;
-}
-
-.buttonAdd {
-    background-color: #FFF7EF;
-    border: 0px solid;
-    font-size: 30px;
-    flex-basis: 50px;
-    border-radius: 10px;
-}
-
-.priceProduct {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 327px;
-    height: 50px;
-    background: #15619F;
-    border-radius: 10px;
-    border: 0px solid;
-    font-size: 24px;
-    color: white;
-}
-
-.shiper {
-    margin-top: 10px;
-    display: flex;
-    font-family: SFU Futura;
-    font-size: 14px;
-    line-height: 24px;
-    color: #4D2C27;
-}
-
-#ship_img {
-    width: 15px;
-    height: 12px;
-    padding-right: 10px;
-}
-
-.content_ship {
-    flex: 1;
-}
-
-.shipFast {
-    margin-top: 20px;
-    display: flex;
-    font-family: SFU Futura;
-    font-size: 14px;
-    line-height: 24px;
-    color: #4D2C27;
-}
-
-.ship span {
-    color: brown;
-}
-
-.shipFast span {
-    color: brown;
-}
-
-
-/*   */
-
-.custom {
-    margin: 70px 140px 50px 140px;
-    height: 24px;
-    font-family: SFU Futura;
-    font-size: 24px;
-    line-height: 24px;
-    color: #15619F;
-}
-
-.custom_detail {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1300px;
-    margin: auto;
-    transition-duration: 4s;
-    transition-timing-function: linear;
-}
-
-.custom_content {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-}
-
-.button_LR {
-    width: 40px;
-    border: 0px solid;
-    background: white;
-    justify-content: center;
-}
-
-.X {
-    height: 150px;
-    border: 1px solid #658E73;
-    border-radius: 10px;
-    text-align: left;
-    margin: 0 30px;
-    display: flex;
-    flex: 1;
-    max-width: 400px;
-    transition-duration: 4s;
-    transition-timing-function: linear;
-}
-
-.X_img {
-    margin: 10px 0px 10px 20px;
-}
-
-.X_content {
-    display: flex;
-    flex-direction: column;
-    margin: 18px 0px 0px 30px;
-    font-family: SFU Futura;
-    font-size: 16px;
-    line-height: 32px;
-    text-align: left;
-    color: #000000;
-}
-
-.X_detail {
-    font-family: SFU Bold;
-}
-
-.X_price {
-    margin-top: 30px;
-    margin-left: 20px;
-}
-
-X table th button {
-    background-color: white;
-    border: 0px solid;
-}
-
-
-/* */
-
-.Thebandia {
-    margin: 80px 140px 40px 140px;
-}
-
-.Thebandia p {
-    line-height: 22px;
-    font-family: SFU Futura;
-    font-size: 14px;
-    line-height: 24px;
-    max-width: 710px;
-}
-
-.Tip {
-    font-family: SFU Futura;
-    font-size: 24px;
-    line-height: 20px;
-    color: #15619F;
-    margin-bottom: 30px;
-    line-height: 22px;
-}
-
-
-/* */
-
-.productSeen {
-    display: flex;
-    flex-direction: column;
-}
-
-.titleSeen {
-    height: 24px;
-    font-family: SFU Futura;
-    font-size: 24px;
-    line-height: 24px;
-    color: #15619F;
-    margin: 0 140px;
-}
-
-.productSeen_content {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1300px;
-    margin: auto;
-}
-
-.Item_content {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-}
-
-.Item1,
-.Item2,
-.Item3,
-.Item4 {
-    flex: 1;
-    height: 296px;
-    padding: 50px 32px;
-    max-width: 240px;
-}
-
-.Item_detail {
-    display: flex;
-    flex-direction: column;
-}
-
-.Item_contain {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-}
-
-.Item_bottom {
-    display: flex;
-}
-
-.add {
-    background: #F2F2F2;
-    border: 1px solid #BDBDBD;
-    box-sizing: border-box;
-    font-family: SFU Futura;
-    font-size: 14px;
-    line-height: 165%;
-}
-
-.Item_name {
-    font-family: SFU Bold;
-    font-size: 14px;
-    line-height: 25px;
-}
-
-.Item_size {
-    font-family: SFU Futura;
-    font-size: 12px;
-    line-height: 165%;
-}
-
-.Item_price {
-    font-family: SFU Futura;
-    font-size: 12px;
-    line-height: 165%;
-}
-
-.empty {
-    flex: 1;
-}
-
-
-/* */
-
-.footer {
-    display: flex;
-    background: #FFF7EF;
-    margin-top: 130px;
-    font-family: SFU Futura;
-    font-size: 14px;
-    flex-direction: column;
-    padding: 60px;
-}
-
-.we_blog {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: 128px;
-    height: 29px;
-}
-
-.footer p {
-    border-bottom: 1px solid #658E73;
-    font-family: SFU Futura;
-    font-size: 14px;
-    line-height: 25px;
-    color: #4D2C27;
-    height: 25px;
-    border-bottom: 1px solid #658E73;
-}
-
-.Logo {
-    width: 128px;
-    height: 29px;
-    margin-right: 100px;
-}
-
-.foot1,
-.foot2,
-.foot3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.copy {
-    height: 20px;
-    margin: 30px 50px;
-}
-
-.we {
-    height: 100px;
-    font-family: SFU Bold;
-    font-size: 14px;
-}
-
-.blog {
-    font-family: SFU Futura;
-    font-size: 14px;
-}
-
-.sp {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 132px;
-    margin-top: 30px;
-}
-
-.connect {
-    margin-top: 30px;
-    font-family: SFU Futura;
-    font-size: 14px;
-}
-
-.connect image {
-    width: 27px;
-    height: 27px;
-    margin: 5px;
-}
-
-.address {
-    font-family: SFU Futura;
-    font-size: 14px;
-    line-height: 35px;
-    color: #4D2C27;
-    max-width: 325px;
-}
-
-.imgAddress {
-    margin: 10px;
-}
-
-.phone {
-    font-family: SFU Futura;
-    font-size: 12px;
-    line-height: 165%;
-    color: #4D2C27;
-}
-
-.imgPhone {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.iconConnect {
-    margin: 10px 10px 0px 0px;
-}
-
-.fb:hover {
-    background: #3B5998;
-}
-
-.fb {
-    background: #444242;
-    height: 24px;
-    width: 24px;
-    border-radius: 5px;
-    text-align: right;
-    padding: 3px 3px 0px 0px;
-    float: left;
-    margin-right: 10px;
-}
-
-.insta:hover {
-    background: #3B5998;
-}
-
-.insta {
-    background: #444242;
-    height: 24px;
-    width: 24px;
-    border-radius: 5px;
-    text-align: right;
-    padding: 3px 4px 0px 0px;
-    float: left;
-    margin-right: 10px;
-}
-
-.mess:hover {
-    background: #3B5998;
-}
-
-.mess {
-    background: #444242;
-    height: 22px;
-    width: 22px;
-    border-radius: 5px;
-    text-align: right;
-    padding: 4px 5px 0px 0px;
-    float: left;
-}
-
-.ddk {
-    width: 52px;
-    height: 42px;
-}
-
-.telephone_content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.phone1,
-.phone2 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-b {
-    font-family: SFU Bold;
-    font-size: 14px;
-}
-
-.footContain {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-@media only screen and (max-width: 848px) {
-    .MainP {
-        flex-direction: row;
+    body {
+        max-width: 1440px;
+        margin: 0px auto;
     }
-    .SP img {
-        padding-left: 40px;
+    
+    @font-face {
+        font-family: SFU Futura;
+        src: url(SFUFuturaRegular.ttf);
     }
-    .imgMain {
+    
+    @font-face {
+        font-family: SFU Bold;
+        src: url(SFUFuturaBold.ttf);
+    }
+    
+    .header {
+        margin: 70px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .Tmenu {
+        font-family: SFU Futura;
+        font-size: 17px;
+        color: #4F4F4F;
+        text-decoration: none;
+        padding: 0 20px;
+    }
+    
+    .search {
+        display: flex;
+        width: 251px;
+        height: 36px;
+        background: #FFF7EF;
+        border-radius: 4px;
+    }
+    
+    .search button {
+        border: none;
+        background-color: #FFF7EF;
+        height: 38px;
+        width: 30px;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    .searchIcon {
+        width: 17px;
+        height: 17px;
+        margin-top: 5px;
+    }
+    
+    .inputSearch {
+        flex: 1;
+        background-color: #FFF7EF;
+        border-radius: 4px;
+        border: 0px solid;
+        width: 215px;
+        height: 36px;
+        text-indent: 10px;
+    }
+    
+    .shop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .shop .s1 {
+        background: #E60606;
+        border-radius: 50%;
+        min-width: 22px;
+        height: 22px;
+        text-align: center;
+        color: #fff;
+        margin: -15px auto;
+    }
+    
+    .shop img {
+        max-width: 32px;
+        max-height: 27px;
+    }
+    /*  */
+    
+    main {
+        margin-top: 50px;
+    }
+    
+    .T_Product {
+        font-family: SFU Futura;
+        font-size: 16px;
+        line-height: 32px;
+        color: #0E1716;
+        margin: 0 150px;
+    }
+    
+    .T_Product span {
+        color: bisque;
+    }
+    
+    .T_Product a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .SP {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 30px 120px;
+    }
+    
+    hr {
         width: 100%;
-        height: 100%;
+        background: #658E73;
     }
+    
+    .img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .SP img {
+        padding: 20px 0;
+    }
+    
+    .MainP {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .imgMain {
+        width: 517px;
+        height: 637.63px;
+    }
+    
+    .detailsProduct {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titleProduct {
+        font-family: SFU Futura;
+        font-size: 42px;
+        line-height: 59px;
+        margin-bottom: 50px;
+        color: #4D2C27;
+    }
+    
+    .textProduct {
+        width: 380px;
+        font-family: SFU Futura;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+    
+    .counterProduct {
+        display: flex;
+        width: 335px;
+        height: 36px;
+        background: #FFF7EF;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    
+    .counterProduct input {
+        flex: 1;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        font-size: 22px;
+        text-align: center;
+        background: #FFF7EF;
+        border: 0px solid;
+        box-direction: none;
+    }
+    
+    .buttonSub {
+        background-color: #FFF7EF;
+        border: 0px solid;
+        font-size: 30px;
+        flex-basis: 50px;
+        border-radius: 10px;
+    }
+    
+    .buttonAdd {
+        background-color: #FFF7EF;
+        border: 0px solid;
+        font-size: 30px;
+        flex-basis: 50px;
+        border-radius: 10px;
+    }
+    
+    .priceProduct {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 327px;
+        height: 50px;
+        background: #15619F;
+        border-radius: 10px;
+        border: 0px solid;
+        font-size: 24px;
+        color: white;
+    }
+    
+    .shiper {
+        margin-top: 10px;
+        display: flex;
+        font-family: SFU Futura;
+        font-size: 14px;
+        line-height: 24px;
+        color: #4D2C27;
+    }
+    
+    #ship_img {
+        width: 15px;
+        height: 12px;
+        padding-right: 10px;
+    }
+    
+    .content_ship {
+        flex: 1;
+    }
+    
+    .shipFast {
+        margin-top: 20px;
+        display: flex;
+        font-family: SFU Futura;
+        font-size: 14px;
+        line-height: 24px;
+        color: #4D2C27;
+    }
+    
+    .ship span {
+        color: brown;
+    }
+    
+    .shipFast span {
+        color: brown;
+    }
+    /*   */
+    
+    .custom {
+        margin: 70px 140px 50px 140px;
+        height: 24px;
+        font-family: SFU Futura;
+        font-size: 24px;
+        line-height: 24px;
+        color: #15619F;
+    }
+    
+    .custom_detail {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1300px;
+        margin: auto;
+    }
+    
+    .custom_content {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    
+    .button_LR {
+        width: 40px;
+        border: 0px solid;
+        background: white;
+        justify-content: center;
+        border: 0px solid;
+    }
+    
+    #slide {
+        height: 200px;
+        display: flex;
+    }
+    
+    #slide img {
+        width: 200px;
+    }
+    
+    .slideshow {
+        flex: 1;
+        overflow: hidden;
+    }
+    
+    .X {
+        height: 150px;
+        border: 1px solid #658E73;
+        border-radius: 10px;
+        margin: auto 35px;
+        display: flex;
+        flex: 1;
+        max-width: 400px;
+    }
+    
+    .X_img {
+        margin: 10px 0px 10px 20px;
+    }
+    
+    .X_content {
+        display: flex;
+        flex-direction: column;
+        margin: 18px 0px 0px 30px;
+        font-family: SFU Futura;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: left;
+        color: #000000;
+        min-width: -webkit-fill-available;
+    }
+    
+    .X_detail {
+        font-family: SFU Bold;
+    }
+    
+    .X_price {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    X table th button {
+        background-color: white;
+        border: 0px solid;
+    }
+    /* */
+    
+    .Thebandia {
+        margin: 80px 140px 40px 140px;
+    }
+    
+    .Thebandia p {
+        line-height: 22px;
+        font-family: SFU Futura;
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 710px;
+    }
+    
+    .Tip {
+        font-family: SFU Futura;
+        font-size: 24px;
+        line-height: 20px;
+        color: #15619F;
+        margin-bottom: 30px;
+        line-height: 22px;
+    }
+    /* */
+    
+    .productSeen {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titleSeen {
+        height: 24px;
+        font-family: SFU Futura;
+        font-size: 24px;
+        line-height: 24px;
+        color: #15619F;
+        margin: 0 140px;
+    }
+    
+    .productSeen_content {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1300px;
+        margin: auto;
+    }
+    
     .Item_content {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    
+    #slideSeen {
+        height: 450px;
+        display: flex;
+    }
+    
+    .slideshowSeen {
+        flex: 1;
+        overflow: hidden;
+    }
+    
+    .Item1,
+    .Item2,
+    .Item3,
+    .Item4 {
+        flex: 1;
+        height: 296px;
+        padding: 50px 32px;
+        max-width: 240px;
+    }
+    
+    .Item_detail {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Item_contain {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    
+    .Item_bottom {
+        display: flex;
+    }
+    
+    .add {
+        background: #F2F2F2;
+        border: 1px solid #BDBDBD;
+        box-sizing: border-box;
+        font-family: SFU Futura;
+        font-size: 14px;
+        line-height: 165%;
+    }
+    
+    .Item_name {
+        font-family: SFU Bold;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    
+    .Item_size {
+        font-family: SFU Futura;
+        font-size: 12px;
+        line-height: 165%;
+    }
+    
+    .Item_price {
+        font-family: SFU Futura;
+        font-size: 12px;
+        line-height: 165%;
+    }
+    
+    .empty {
+        flex: 1;
+    }
+    /* */
+    
+    .footer {
+        display: flex;
+        background: #FFF7EF;
+        margin-top: 130px;
+        font-family: SFU Futura;
+        font-size: 14px;
+        flex-direction: column;
+        padding: 60px;
+    }
+    
+    .we_blog {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        width: 128px;
+        height: 29px;
+    }
+    
+    .footer p {
+        border-bottom: 1px solid #658E73;
+        font-family: SFU Futura;
+        font-size: 14px;
+        line-height: 25px;
+        color: #4D2C27;
+        height: 25px;
+        border-bottom: 1px solid #658E73;
+    }
+    
+    .Logo {
+        width: 128px;
+        height: 29px;
+        margin-right: 100px;
+    }
+    
+    .foot1,
+    .foot2,
+    .foot3 {
+        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
-}
-
-@media only screen and (max-width: 564px) {
-    .T_Product {
-        margin: 0 50px;
+    
+    .copy {
+        height: 20px;
+        margin: 30px 50px;
     }
-}
+    
+    .we {
+        height: 100px;
+        font-family: SFU Bold;
+        font-size: 14px;
+    }
+    
+    .blog {
+        font-family: SFU Futura;
+        font-size: 14px;
+    }
+    
+    .sp {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 132px;
+        margin-top: 30px;
+    }
+    
+    .connect {
+        margin-top: 30px;
+        font-family: SFU Futura;
+        font-size: 14px;
+    }
+    
+    .connect image {
+        width: 27px;
+        height: 27px;
+        margin: 5px;
+    }
+    
+    .address {
+        font-family: SFU Futura;
+        font-size: 14px;
+        line-height: 35px;
+        color: #4D2C27;
+        max-width: 325px;
+    }
+    
+    .imgAddress {
+        margin: 10px;
+    }
+    
+    .phone {
+        font-family: SFU Futura;
+        font-size: 12px;
+        line-height: 165%;
+        color: #4D2C27;
+    }
+    
+    .imgPhone {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .iconConnect {
+        margin: 10px 10px 0px 0px;
+    }
+    
+    .fb:hover {
+        background: #3B5998;
+    }
+    
+    .fb {
+        background: #444242;
+        height: 24px;
+        width: 24px;
+        border-radius: 5px;
+        text-align: right;
+        padding: 3px 3px 0px 0px;
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .insta:hover {
+        background: #3B5998;
+    }
+    
+    .insta {
+        background: #444242;
+        height: 24px;
+        width: 24px;
+        border-radius: 5px;
+        text-align: right;
+        padding: 3px 4px 0px 0px;
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .mess:hover {
+        background: #3B5998;
+    }
+    
+    .mess {
+        background: #444242;
+        height: 22px;
+        width: 22px;
+        border-radius: 5px;
+        text-align: right;
+        padding: 4px 5px 0px 0px;
+        float: left;
+    }
+    
+    .ddk {
+        width: 52px;
+        height: 42px;
+    }
+    
+    .telephone_content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .phone1,
+    .phone2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    b {
+        font-family: SFU Bold;
+        font-size: 14px;
+    }
+    
+    .footContain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    @media only screen and (max-width: 848px) {
+        .MainP {
+            flex-direction: row;
+        }
+        .SP img {
+            padding-left: 40px;
+        }
+        .imgMain {
+            width: 100%;
+            height: 100%;
+        }
+        .Item_content {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+    
+    @media only screen and (max-width: 564px) {
+        .T_Product {
+            margin: 0 50px;
+        }
+    }
