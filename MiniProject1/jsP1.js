@@ -147,7 +147,7 @@ slideWith.addEventListener('transitionend', () => {
         counter = len - 1;
         slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
-    if (counter == len) {
+    if (counter >= len) {
         slide.style.transition = "none";
         counter = 0;
         slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -187,7 +187,7 @@ slideS.addEventListener('transitionend', () => {
         counterS = lenS - 1;
         slideS.style.transform = 'translateX(' + (-sizeS * counterS) + 'px)';
     }
-    if (counterS == lenS) {
+    if (counterS >= lenS) {
         slideS.style.transition = "none";
         counterS = 0;
         slideS.style.transform = 'translateX(' + (-sizeS * counterS) + 'px)';
